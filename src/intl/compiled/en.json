@@ -1283,12 +1283,6 @@
       "value": "Do not turn your validator off until this epoch is reached."
     }
   ],
-  "8fXTDo": [
-    {
-      "type": 0,
-      "value": "Fortunately, this is only a one-time message that needs to be processed, and validators who provided withdrawal credentials at time of deposit are exempt from this step. Once completed, your validator is permanently enabled for withdrawals, and will be eligible for payouts during the next sweep."
-    }
-  ],
   "8k1RjX": [
     {
       "type": 1,
@@ -2305,6 +2299,28 @@
     {
       "type": 0,
       "value": "Slashing has two purposes: (1) to make it prohibitively expensive to attack the network, and (2) to stop validators from being lazy by checking that they actually perform their duties. If you're slashed because you've acted in a provably destructive manner, a portion of your stake will be destroyed."
+    }
+  ],
+  "HemvTL": [
+    {
+      "type": 0,
+      "value": "BLS withdrawal credentials ("
+    },
+    {
+      "type": 1,
+      "value": "type0"
+    },
+    {
+      "type": 0,
+      "value": ") can be updated to an execution address ("
+    },
+    {
+      "type": 1,
+      "value": "type1"
+    },
+    {
+      "type": 0,
+      "value": ") by broadcasting a BLS To Execution Change (BTEC) message, signed with your BLS withdrawal key. These messages are included in blocks at a max rate of 16 per block."
     }
   ],
   "Hmxd5S": [
@@ -3969,20 +3985,6 @@
       "value": "German"
     }
   ],
-  "U0QXlZ": [
-    {
-      "type": 0,
-      "value": "As noted above, this step is completed by signing a message known as "
-    },
-    {
-      "type": 1,
-      "value": "message"
-    },
-    {
-      "type": 0,
-      "value": ". These are accepted into blocks as of the first slot after the Withdrawals update upgrade."
-    }
-  ],
   "UHbYCa": [
     {
       "type": 0,
@@ -4919,6 +4921,12 @@
     {
       "type": 0,
       "value": "What is a validator client?"
+    }
+  ],
+  "cJ9MRI": [
+    {
+      "type": 0,
+      "value": "If more than 16 requests are being made at one time, a queue will be formed and these will be processed in subsequent blocks. Once completed, your validator is permanently enabled for withdrawals, and will be eligible for payouts during the next sweep."
     }
   ],
   "cRzxes": [
@@ -7367,20 +7375,6 @@
       "value": "."
     }
   ],
-  "w0RGXG": [
-    {
-      "type": 0,
-      "value": "These messages are limited to 16 per block ("
-    },
-    {
-      "type": 1,
-      "value": "message"
-    },
-    {
-      "type": 0,
-      "value": "), so if more than 16 requests are being made at one time, a queue will be formed and these will be processed in subsequent blocks. This means that immediately following the Withdrawals update, users submitting this message may see delays up to an estimated 2-3 days before this request is processed."
-    }
-  ],
   "w6qYSU": [
     {
       "type": 0,
@@ -7483,28 +7477,6 @@
     {
       "type": 0,
       "value": "PoS is a more secure, decentralized, and environmentally-friendly consensus mechanism than the proof-of-work (PoW) that secures Ethereum today. It rewards validators for building the chain, but slashes their deposits if they try to attack it, incentivising healthy behaviour. This upgrade is already live in the form of the Agora chain."
-    }
-  ],
-  "wpM7Y5": [
-    {
-      "type": 0,
-      "value": "One of the queues worth noting is a queue that limits how many BLS ("
-    },
-    {
-      "type": 1,
-      "value": "type0"
-    },
-    {
-      "type": 0,
-      "value": ") withdrawal addresses can be updated to an execution address ("
-    },
-    {
-      "type": 1,
-      "value": "type1"
-    },
-    {
-      "type": 0,
-      "value": ") during a given block."
     }
   ],
   "wqUcy/": [

@@ -216,8 +216,9 @@ export const Withdrawals = () => {
                 </Heading>
                 <Text className="mb10">
                   <FormattedMessage
-                    defaultMessage="One of the queues worth noting is a queue that limits how many BLS ({type0})
-                    withdrawal addresses can be updated to an execution address ({type1}) during a given block."
+                    defaultMessage="BLS withdrawal credentials ({type0}) can be updated to an execution address ({type1})
+                    by broadcasting a BLS To Execution Change (BTEC) message, signed with your BLS withdrawal key. These
+                    messages are included in blocks at a max rate of 16 per block."
                     values={{
                       type0: <Code>0x00</Code>,
                       type1: <Code>0x01</Code>,
@@ -226,30 +227,8 @@ export const Withdrawals = () => {
                 </Text>
                 <Text className="mb10">
                   <FormattedMessage
-                    defaultMessage="As noted above, this step is completed by signing a message known as {message}.
-                    These are accepted into blocks as of the first slot after the Withdrawals update
-                    upgrade."
+                    defaultMessage="If more than 16 requests are being made at one time, a queue will be formed and these will be processed in subsequent blocks. Once completed, your validator is permanently enabled for withdrawals, and will be eligible for payouts during the next sweep."
                     values={{ message: <Code>BLSToExecutionChange</Code> }}
-                  />
-                </Text>
-                <Text className="mb10">
-                  <FormattedMessage
-                    defaultMessage="These messages are limited to 16 per block ({message}), so if more than 16
-                    requests are being made at one time, a queue will be formed and these will be processed in
-                    subsequent blocks. This means that immediately following the Withdrawals update, users
-                    submitting this message may see delays up to an estimated 2-3 days before this request
-                    is processed."
-                    values={{
-                      message: <Code>MAX_BLS_TO_EXECUTION_CHANGES</Code>,
-                    }}
-                  />
-                </Text>
-                <Text className="mb10">
-                  <FormattedMessage
-                    defaultMessage="Fortunately, this is only a one-time message that needs to be processed, and
-                    validators who provided withdrawal credentials at time of deposit are exempt from this step. Once
-                    completed, your validator is permanently enabled for withdrawals, and will be eligible for payouts
-                    during the next sweep."
                   />
                 </Text>
               </section>
