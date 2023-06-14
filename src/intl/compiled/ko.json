@@ -148,7 +148,7 @@
   "/e+qAC": [
     {
       "type": 0,
-      "value": "withdrawable epoch"
+      "value": "출금 가능한 에포크"
     }
   ],
   "/jJLYy": [
@@ -7174,7 +7174,7 @@
   "uUkmGX": [
     {
       "type": 0,
-      "value": "exit epoch"
+      "value": "에포크 종료"
     }
   ],
   "uUy3NQ": [
